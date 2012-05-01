@@ -1,0 +1,12 @@
+<html>
+<head>
+<title>Affordable Art for the Home</title>
+</head>
+
+<body>
+{% for artwork in artworks %}
+    <img src="{{ artwork.image.url }}" />
+{% endfor %}
+
+</body>
+</html>
