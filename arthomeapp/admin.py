@@ -1,4 +1,7 @@
 from django.contrib import admin
-from arthomeapp import *
+from arthomeapp.models import *
 
-admin.site.register(models.Artwork)
+admin.site.register(Artwork)
+admin.site.register(ArtworkPiece)
+admin.site.register(Funding)
+admin.site.register(Donor)

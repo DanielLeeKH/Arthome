@@ -1,0 +1,13 @@
+<html>
+
+<head></head>
+<body>
+    {% include "header.html" %}
+	<form enctype="multipart/form-data" action="./{{ artwork_id }}" method="post">
+	    {% csrf_token %}  
+	    Funding Amount: <input type="textfield" name="amount" />
+	    <input type="hidden" name="artwork_id" value="{{ artwork_id }}" />
+	    <input type="Submit" />
+	</form>
+</body>
+</html>

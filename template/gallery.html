@@ -4,8 +4,12 @@
 </head>
 
 <body>
+{% include "header.html" %}
+
 {% for artwork in artworks %}
-    <img src="{{ artwork.image.url }}" />
+    <a href="/view_artwork/{{ artwork.id }}">
+	<img src="{{ artwork.photo.url }}" width="300" heigth="225" />
+    </a>
 {% endfor %}
 
 </body>

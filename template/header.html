@@ -1,0 +1,7 @@
+{% if user.is_authenticated %}
+    <p>Hello {{ user.username }}. <a href="/logout">Logout</a></p>
+{% else %} 
+    <a href="/login">Login</a>
+{% endif %}
+<br>
+

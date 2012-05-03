@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>Affordable Art for the Home</title>
+</head>
+
+<body>
+    {% include "header.html" %}
+
+    <img src="{{ artwork.photo.url }}" width="300" heigth="225" />
+    <br />
+{% for piece_info in funding_info %}
+    Art Piece {{ piece_info.0 }}: ${{ piece_info.1 }} / ${{ piece_info.2 }} raised.
+    <br />
+{% endfor %}
+    
+    <br />
+    <a href="/fund_artwork/{{ artwork.id }}">Fund this</a>
+    
+</body>
+</html>

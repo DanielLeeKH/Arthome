@@ -1,0 +1,1 @@
+URL Pattern	Params	View functionadd_artwork/		upload_artgallery		galleryview_artwork/(\d+)	artwork_id	view_artworkfund_artwork/(\d+)	artwork_id	fund_artworklogin		login
